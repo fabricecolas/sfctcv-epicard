@@ -11,4 +11,4 @@ A few notes on EPICARD's registry from Rennes' academic hospital.
 1. 2019-02-25: [Export / byte order mark (BOM)](issues/bom-in-files)
 2. 2019-03-06: [Export / disengage doublon detection](issues/disengage-doublon-verification/index.md)
 3. 2019-03-06: [UI / Lack of statefullness](issues/loss-of-filters-when-using-history/index.md)
-
+4. 2019-03-06: [REST API CRUDL / To manage patient records](rest-api-crudl-per-patient-record/index.md)
