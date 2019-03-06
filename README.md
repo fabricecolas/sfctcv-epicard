@@ -9,5 +9,5 @@ A few notes on EPICARD's registry from Rennes' academic hospital.
 
 ### Issues
 - 2019-02-25: [Export / byte order mark (BOM)](issues/bom-in-files)
-- 2019-03-06: [Export / disengage doublon detection](issues/disengage-doublon-verification)
+- 2019-03-06: [Export / disengage doublon detection](issues/disengage-doublon-verification/index.md)
 
