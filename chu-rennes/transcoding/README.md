@@ -3,8 +3,9 @@
 - [Computed attributes](#computed-attributes)
 - [Exclusion criteria](#exclusion-criteria)
 
+## Computed attributes
 
-## Computed attributes<a name="computed-attributes"></a>
+Abc
 
 | `EPICARD ID` | `LOCAL ID` | 1-to-1 | Transc. | 
 ------------------------------------------------
