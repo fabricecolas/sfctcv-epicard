@@ -3,7 +3,7 @@
 Roadmap, bug, issues, and feature requests for EPICARD's registry at Rennes'
 academic hospital. 
 
-## Rennes academic hospital
+## At Rennes' academic hospital
 
 1. [In-house developed transcoding](chu-rennes/transcoding/index.md); 
 2. [Files encoded and submitted as ISO-8859-1 (ANSI)](chu-rennes/encoding/index.md);
