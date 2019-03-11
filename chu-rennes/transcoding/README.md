@@ -125,7 +125,7 @@
 | `HCHOL`           | `IPO_Risq_Dyslip` | 1-to-1  |
 | `TAVK`            | Based on `ipo_patho_anticoag` | transc |
 | `TAA`             | Based on `ipo_patho_antiag` | transc |
-| `DOURAA`          | Coded as missing (`2`) |   |
+| `DOURAA`          | Coded as missing (`2`) | coded-as-2  |
 | `NINCEC`          |        | transc  |
 | `ATCDF`           | `NULL` | coded-as-null |
 | `DOSSIER`         | `NULL` | coded-as-null |
@@ -139,14 +139,14 @@
 | `EUROSCOREL`      | `NULL` | coded-as-null, EPICARD_v1 (obsolete) |
 | `EUROSCOREL_V`    | `NULL` | coded-as-null, EPICARD_v1 (obsolete) |
 | `CPBIA_PEROP`     | `NULL` | coded-as-null, EPICARD_v1 (obsolete) |
-| `DATINT_D`        | `to_char(INT_DATEINTERVENTION,'DD')` |   |
-| `DATINT_M`        | `to_char(INT_DATEINTERVENTION,'MM')` |   |
-| `DATINT_Y`        | `to_char(INT_DATEINTERVENTION,'YYYY')` |   |
-| `DATINT`          | `to_char(INT_DATEINTERVENTION,'DD/MM/YYYY')` |   |
-| `CODCHIR1`        | 1st surgeon's first and last names | transc |
-| `NBRPPS1`         | 1st surgeon's RPPS | transc |
-| `CODCHIR2`        | 2nd surgeon's first and last name | transc |
-| `NBRPPS2`         | 2nd surgeon's RPPS | transc |
+| `DATINT_D`        | `to_char(INT_DATEINTERVENTION,'DD')` | calc  |
+| `DATINT_M`        | `to_char(INT_DATEINTERVENTION,'MM')` | calc  |
+| `DATINT_Y`        | `to_char(INT_DATEINTERVENTION,'YYYY')` | calc  |
+| `DATINT`          | `to_char(INT_DATEINTERVENTION,'DD/MM/YYYY')` | calc  |
+| `CODCHIR1`        | 1st surgeon's first and last names | transc, drift |
+| `NBRPPS1`         | 1st surgeon's RPPS | transc, drift |
+| `CODCHIR2`        | 2nd surgeon's first and last name | transc, drift |
+| `NBRPPS2`         | 2nd surgeon's RPPS | transc, drift |
 | `TYPECHIR_C1`     | `DECODE(igs_chicor, NULL, NULL, 1)` | 1-to-1 |
 | `TYPECHIR_C2`     |     | transc |
 | `TYPECHIR_C3`     | `DECODE(IGS_CHIAORT, NULL, NULL, 1)` | 1-to-1 |
@@ -339,7 +339,7 @@
 | `PROTOC_YN_F1` | `NULL` | coded-as-null  |
 | `COMMENT_DN_F1` | `NULL` |coded-as-null   |
 | `DECAPRESSORT` |  | transc |
-| `OCOMPL` | | transc |
+| `OCOMPL` | | transc, drift|
 | `CLEARDIAL_CLASSE` | | transc |
 | `ETIOA` |  | transc |
 | `INSMIT` |  | transc |
@@ -350,12 +350,12 @@
 | `ETIOP` |  | transc |
 | `TYPECHIR_C4` | | transc |
 | `CEC` | `int_coeurbattant` | 1-to-1 |
-| `FABRICANTA` | Based on `IGS_ChiValvaire_RVAType` | transc |
-| `MODELEA` | Based on `IGS_ChiValvaire_RVAType` | transc  |
-| `TAILLEA` | Based on `IGS_ChiValvaire_RVAType and Taille` | transc |
-| `MITVALO` | Based on `Trasncoding based on RVMType` | transc |
-| `FABRICANTCA4` | Based on `IGS_ChiValvaire_RVAType` | transc |
-| `MODLECA4` | Based on `IGS_ChiValvaire_RVAType` | transc |
+| `FABRICANTA` | Based on `IGS_ChiValvaire_RVAType` | transc, drift |
+| `MODELEA` | Based on `IGS_ChiValvaire_RVAType` | transc, drift  |
+| `TAILLEA` | Based on `IGS_ChiValvaire_RVAType and Taille` | transc, drift |
+| `MITVALO` | Based on `Trasncoding based on RVMType` | transc, drift |
+| `FABRICANTCA4` | Based on `IGS_ChiValvaire_RVAType` | transc, drift |
+| `MODLECA4` | Based on `IGS_ChiValvaire_RVAType` | transc, drift |
 | `NTAC` | `NTCV_V+NACCV_V` | calc |
 | `NTAC_V` | `NTCV_V+NACCV_V` | calc |
 
