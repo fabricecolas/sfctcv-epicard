@@ -8,10 +8,13 @@
 
 | `EPICARD ID` | `LOCAL ID` | 1-to-1 | Transc. | 
 ------------------------------------------------
-| `INUM_PATIENT` | ` num_patient` |  |   |
-| `STUDY_ID` | ` 'EPICARD'` |  |   |
-| `COUNTRY_ID` | ` 'fr'` |  |   |
+| `INUM_PATIENT`    | ` num_patient` |  |   |
+| `STUDY_ID`        | ` 'EPICARD'` |  |   |
+| `COUNTRY_ID`      | ` 'fr'` |  |   |
 | `EXTRACTION_DATE` | ` System's date` |  |   |
+
+
+
 | `SITE_ID` | ` '350000741_01'` |  |   |
 | `SUBJECT_ID` | ` num_interv` |  |   |
 | `SUBJECT_REF` | ` CONCAT('350000741_01-',  LPAD(num_interv, 8, '0'))` |  |   |
