@@ -8,6 +8,14 @@ We split "contributing centers" in two, there're:
 
 - This story focuses on type 2 users. 
 
+Example centers: 
+1. Rennes; 
+2. Nantes;
+3. Lyon;
+4. Angers.
+
+And, *possibly*, Institut Mutualiste Montsouris, Pasteur Toulouse, and Fort-de-France.
+
 ## Need: Empty a center from its patients
 
 For type 2 users of EPICARD's registry in CleanWeb, the aim is to develop a
