@@ -1,4 +1,4 @@
-# Allow to disengage doublon detection when batch-importing 
+# Allow to disengage duplicate detection when batch-importing 
 
 ## Persona: Large centers sending data in batch
 
@@ -8,11 +8,11 @@ We split "contributing centers" in two, there're:
 
 This story focuses on type 2 users.
 
-## Need: Disengage doublon detection
+## Need: Disengage duplicate detection
 
 For type 2 users of EPICARD's registry in CleanWeb, the aim is to batch-import
 patient records in the registry. However this is not possible due to the
-so-called doublon detection. Here's the resulting error log appearing on the
+so-called duplicate detection. Here's the resulting error log appearing on the
 "Simulation d'import".  
 ```
 Erreur lors de la création de la référence patient :
@@ -34,6 +34,6 @@ needs to be reiterated.
 ## Requirement
 
 Two options: 
-1. Have a doublon-detection plugin that does not bug for batch-imports; or 
+1. Have a duplicate-detection plugin that does not bug for batch-imports; or 
 2. Give the autonomy to center's users running a batch-import to disengage that plugin when proceeding. 
 
