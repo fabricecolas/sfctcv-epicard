@@ -6,358 +6,358 @@
 ## Computed attributes
 
 
-| EPICARD ID | LOCAL ID | 1-to-1 | Transc. | Obsolete | 
-|------------|----------|--------|---------|----------|
-| `INUM_PATIENT`    | ` num_patient` |  |   |   |
-| `STUDY_ID`        | ` 'EPICARD'` |  |   |   |
-| `COUNTRY_ID`      | ` 'fr'` |  |   |   |
-| `EXTRACTION_DATE` | ` System's date` |  |   |   |
-| `SITE_ID` | ` '350000741_01'` |  |   |   |
-| `SUBJECT_ID` | ` num_interv` |  |   |   |
-| `SUBJECT_REF` | ` CONCAT('350000741_01-',  LPAD(num_interv, 8, '0'))` |  |   |   |
-| `REF_CENTRENB` | ` '350000741_01'` |  |   |   |
-| `REF_NUMBER` | ` '350000741_01'` |  |   |   |
-| `CENTRENB` | ` '350000741_01'` |  |   |   |
-| `CENTRE` | ` 'RENNES - HOPITAL PONTCHAILLOU'` |  |   |   |
-| `NOM` | ` NOM_PATIENT` |  |   |   |
-| `NOMM` | ` NOM_JF_PATIENT` |  |   |   |
-| `PRENOM` | ` PRENOM_PATIENT` |  |   |   |
-| `SEXE` | ` sexe` |  |   |   |
-| `DATNAIS_D` | ` TO_CHAR(DATE_NAIS_PATIENT, 'DD')` |  |   |   |
-| `DATNAIS_M` | ` TO_CHAR(DATE_NAIS_PATIENT, 'MM')` |  |   |   |
-| `DATNAIS_Y` | ` TO_CHAR(DATE_NAIS_PATIENT, 'YYYY')` |  |   |   |
-| `DATNAIS` | ` TO_CHAR(DATE_NAIS_PATIENT, 'DD/MM/YYYY')` |  |   |   |
-| `EMAIL` | ` NULL` |  |   |   |
-| `PORT` | ` TEL` |  |   |   |
-| `PAYSNAISS` | ` Transcoding based on social security number` |  |   |   |
-| `COMNAIS` | ` Transcoding based on social security number and lieunaissance` |  |   |   |
-| `COMNAISOM` | ` Transcoding based on social security number` |  |   |   |
-| `PAYSNAISLEQUEL` | ` PAT_LIEUNAISSANCE` |  |   |   |
-| `STATUSVD` | ` decode(PAT_DCD,NULL,0,1)` |  |   |   |
-| `DATEDECP_D` | ` TO_CHAR(PAT_DATEDECES, 'DD')` |  |   |   |
-| `DATEDECP_M` | ` TO_CHAR(PAT_DATEDECES, 'MM')` |  |   |   |
-| `DATEDECP_Y` | ` TO_CHAR(PAT_DATEDECES, 'YYYY')` |  |   |   |
-| `DATEDECP` | ` TO_CHAR(PAT_DATEDECES,'DD/MM/YYYY')` |  |   |   |
-| `NBINTERVENTION` | ` PAT_NBINT_CALCUL` |  |   |   |
-| `NBINTERVENTION_V /* num_interv */` | ` PAT_NBINT_CALCUL` |  |   |   |
-| `DATEINTERV_D` | ` to_char(INT_DATEINTERVENTION,'DD')` |  |   |   |
-| `DATEINTERV_M` | ` to_char(INT_DATEINTERVENTION,'MM')` |  |   |   |
-| `DATEINTERV_Y` | ` to_char(INT_DATEINTERVENTION,'YYYY')` |  |   |   |
-| `DATEINTERV` | ` to_char(INT_DATEINTERVENTION,'DD/MM/YYYY')` |  |   |   |
-| `STATUS_INT` | ` NULL` |  |   |   |
-| `STATUS_INT_V` | ` NULL` |  |   |   |
-| `EUROSCORE` | ` NULL` |  |   |   |
-| `EUROSCORE_V` | ` NULL` |  |   |   |
-| `DATADM_D` | ` to_char(INT_DATEENTREE,'DD')` |  |   |   |
-| `DATADM_M` | ` to_char(INT_DATEENTREE,'MM')` |  |   |   |
-| `DATADM_Y` | ` to_char(INT_DATEENTREE,'YYYY')` |  |   |   |
-| `DATADM` | ` to_char(INT_DATEENTREE,'DD/MM/YYYY')` |  |   |   |
-| `DATINTP_D` | ` to_char(INT_DATEINTERVENTION,'DD')` |  |   |   |
-| `DATINTP_M` | ` to_char(INT_DATEINTERVENTION,'MM')` |  |   |   |
-| `DATINTP_Y` | ` to_char(INT_DATEINTERVENTION,'YYYY')` |  |   |   |
-| `DATINTP` | ` to_char(INT_DATEINTERVENTION,'DD/MM/YYYY')` |  |   |   |
-| `AGE` | ` AGE_CALCUL` |  |   |   |
-| `AGE_V` | ` AGE_CALCUL` |  |   |   |
-| `EUROSCORE_AGE` | ` NULL` |  |   |   |
-| `EUROSCORE_AGE_V` | ` NULL` |  |   |   |
-| `POIDS` | ` int_poids` |  |   |   |
-| `POIDS_V` | ` int_poids` |  |   |   |
-| `TAILLE` | ` int_taille` |  |   |   |
-| `TAILLE_V` | ` int_taille` |  |   |   |
-| `SURF_COPR` | ` ROUND(INT_SurfCorp_calcul,0.01)` |  |   |   |
-| `SURF_COPR_V` | ` ROUND(INT_SurfCorp_calcul,0.01)` |  |   |   |
-| `IMC` | ` ROUND(INT_Poids / ( (INT_Taille/100)*(INT_Taille/100)),0.01)` |  |   |   |
-| `IMC_V` | ` ROUND(INT_Poids / ( (INT_Taille/100)*(INT_Taille/100)),0.01)` |  |   |   |
-| `CREAPREOP` | ` ipo_creat` |  |   |   |
-| `CREAPREOP_V` | ` ipo_creat` |  |   |   |
-| `CLEARANCE` | ` Transcoding based on patient's gender` |  |   |   |
-| `END CLEARANCE_V` | ` Transcoding based on patient's gender (copied)` |  |   |   |
-| `DIAL` | ` Transcoding based renal insufficiency` |  |   |   |
-| `TDIABPREOP` | ` Transcoding based on diabetes risk` |  |   |   |
-| `EUROSCORE_DIABETE` | ` NULL` |  |   |   |
-| `DIAB` | ` ipo_risq_diabete` |  |   |   |
-| `BPCO` | ` IPO_Patho_InsResp` |  |   |   |
-| `ENDOCARA` | ` Transcoding based on etiology of endocarditis (diagnostics)` |  |   |   |
-| `ENDOSTER` | ` Transcoding based on etiology of endocarditis (diagnostics)` |  |   |   |
-| `NEUROMUSC` | ` IPO_Patho_DeficitNeuro` |  |   |   |
-| `APCVIAP` | ` IPO_Patho_ArtheritVX` |  |   |   |
-| `AMI` | ` IPO_Patho_ArtheritMI` |  |   |   |
-| `AORTIAP` | ` IPO_PATHO_ARTHERITMI` |  |   |   |
-| `ARTEXTR` | ` Transcoding` |  |   |   |
-| `ATCD` | ` Whether there's been a previous intervention (transcoding)` |  |   |   |
-| `NOM_OPCAR` | ` Transcoding based on previous intervention and reintervention` |  |   |   |
-| `NOM_OPCAR_V` | ` Transcoding based on previous intervention and reintervention (copied)` |  |   |   |
-| `NYHA` | ` ipo_nyha` |  |   |   |
-| `ANGOR` | ` ipo_angor_instable` |  |   |   |
-| `IDM_90` | ` IEC_INFARCTUS_90J` |  |   |   |
-| `TVFV` | ` Transcoding based on iec_ecgrythme` |  |   |   |
-| `ANUOLI` | ` int_choc` |  |   |   |
-| `INOTR` | ` INT_INOTROP` |  |   |   |
-| `BCP_PREOP` | ` INT_UrgCPBIA` |  |   |   |
-| `ECMO_ECLS` | ` INT_ASSMECA` |  |   |   |
-| `INC_PREOP` | ` int_intub` |  |   |   |
-| `MC_PREOP` | ` INT_masscard` |  |   |   |
-| `ETATPREOP` | ` Transcoding` |  |   |   |
-| `FE` | ` iec_echofe` |  |   |   |
-| `FE_V` | ` iec_echofe` |  |   |   |
-| `FE_CLASSE` | ` Transcoding based on iec_echofe` |  |   |   |
-| `PAPS` | ` IEC_EchoPaSyst` |  |   |   |
-| `PAPS_V` | ` IEC_EchoPaSyst` |  |   |   |
-| `PAPS_CLASSE` | ` Transcoding based on IEC_EchoPaSyst` |  |   |   |
-| `DEGURG` | ` int_urgence` |  |   |   |
-| `COMINT` | ` Complex transcoding` |  |   |   |
-| `CHIRAO` | ` igs_chiaort` |  |   |   |
-| `MARFAN` | ` Transcoding based on IDG_Etio_Marfan` |  |   |   |
-| `CIVPI` | ` Transcoding based on igs_chi_fermeture_civa` |  |   |   |
-| `NOMB_VCPA` | ` Transcoding involving multiple columns` |  |   |   |
-| `STEN` | ` Transcoding based on iec_corog_degre` |  |   |   |
-| `ANTANC` | ` Transcoding based on ian_dateptca1,2,3,4` |  |   |   |
-| `INSAOR` | ` Transcoding involving multiple columns` |  |   |   |
-| `ETIOAMTP_C1` | ` Transcoding involving multiple columns` |  |   |   |
-| `ETIOAMTP_C2` | ` Transcoding involving multiple columns` |  |   |   |
-| `ETIOAMTP_C3` | ` Transcoding involving multiple columns` |  |   |   |
-| `ETIOAMTP_C4` | ` Transcoding involving multiple columns` |  |   |   |
-| `RETAOR` | ` decode(idg_lesionvalv_ra,NULL,0,1)` |  |   |   |
-| `RETMIT` | ` decode(idg_lesionvalv_rm,NULL,0,1)` |  |   |   |
-| `RETTRI` | ` decode(idg_lesionvalv_rt,NULL,0,1)` |  |   |   |
-| `RETPULM` | ` decode(idg_lesionvalv_rp,NULL,0,1)` |  |   |   |
-| `HTA` | ` One-to-one of ipo_risq_hta` |  |   |   |
-| `HCHOL` | ` One-to-one of IPO_Risq_Dyslip` |  |   |   |
-| `TAVK` | ` Transcoding of ipo_patho_anticoag` |  |   |   |
-| `TAA` | ` Transcoding of ipo_patho_antiag` |  |   |   |
-| `DOURAA` | ` Coded as missing (2)` |  |   |   |
-| `NINCEC` | ` Transcoding` |  |   |   |
-| `ATCDF` | ` NULL` |  |   |   |
-| `DOSSIER` | ` NULL` |  |   |   |
-| `COMPAT` | ` NULL` |  |   |   |
-| `CHIRAV` | ` NULL` |  |   | EPICARD v1 |
-| `CHIRAV_V` | ` NULL` |  |   | EPICARD v1  |
-| `INTMCEC` | ` NULL` |  |   | EPICARD v1 |
-| `INTMCEC_V` | ` NULL` |  |   | EPICARD v1  |
-| `EUROSCORE1` | ` NULL` |  |   | EPICARD v1  |
-| `EUROSCORE1_V` | ` NULL` |  |   | EPICARD v1  |
-| `EUROSCOREL` | ` NULL` |  |   | EPICARD v1  |
-| `EUROSCOREL_V` | ` NULL` |  |   | EPICARD v1  |
-| `CPBIA_PEROP` | ` NULL` |  |   | EPICARD v1 |
-| `DATINT_D` | ` to_char(INT_DATEINTERVENTION,'DD')` |  |   |   |
-| `DATINT_M` | ` to_char(INT_DATEINTERVENTION,'MM')` |  |   |   |
-| `DATINT_Y` | ` to_char(INT_DATEINTERVENTION,'YYYY')` |  |   |   |
-| `DATINT` | ` to_char(INT_DATEINTERVENTION,'DD/MM/YYYY')` |  |   |   |
-| `CODCHIR1` | ` Transcoding of 1st surgeon's first and last names` |  |   |   |
-| `NBRPPS1` | ` Transcoding of 1st surgeon's RPPS` |  |   |   |
-| `CODCHIR2` | ` Transcoding of 2nd surgeon's first and last name` |  |   |   |
-| `NBRPPS2` | ` Transcoding of 2nd surgeon's RPPS` |  |   |   |
-| `TYPECHIR_C1` | ` One-to-one of DECODE(igs_chicor, NULL, NULL, 1)` |  |   |   |
-| `TYPECHIR_C2` | ` Transcoding` |  |   |   |
-| `TYPECHIR_C3` | ` One-to-one: DECODE(IGS_CHIAORT, NULL, NULL, 1)` |  |   |   |
-| `DURCLAMP` | ` One-to-one based on int_tpsclamp` |  |   |   |
-| `DURCLAMP_V` | ` One-to-one based on  int_tpsclamp` |  |   |   |
-| `DURCEC` | ` One-to-one based on int_tpscec` |  |   |   |
-| `DURCEC_V` | ` One-to-one based on int_tpscec` |  |   |   |
-| `PROTCER` | ` Transcoding` |  |   |   |
-| `GVA` | ` Simple transcoding` |  |   |   |
-| `PROTCERA_C1` | ` Simple transcoding of INT_PERFCEREB` |  |   |   |
-| `PROTCERA_C2` | ` Simple transcoding of int_itgarretcirc` |  |   |   |
-| `PROTCERA_C3` | ` Simple transcoding of INT_PERFCEREB` |  |   |   |
-| `VOIESAB_C1` | ` Simple transcoding of INT_Voie` |  |   |   |
-| `VOIESAB_C2` | ` Simple transcoding of INT_Voie` |  |   |   |
-| `VOIESAB_C3` | ` Simple transcoding of IGS_CHIENDO` |  |   |   |
-| `VOIESAB_C4` | ` Simple transcoding of INT_Voie` |  |   |   |
-| `VOIESAB_C5` | ` Simple transcoding of INT_Voie` |  |   |   |
-| `VOIESAB_C6` | ` Simple transcoding of INT_Voie` |  |   |   |
-| `VOIESAB_C7` | ` Simple transcoding of INT_Voie` |  |   |   |
-| `VOIESAB_C8` | ` NULL` |  |   |   |
-| `VOIESAB_C9` | ` NULL` |  |   |   |
-| `VOIESAB_C11` | ` NULL` |  |   |   |
-| `VOIESAB_C10` | ` Simple transcoding of INT_Voie` |  |   |   |
-| `SIVOIES_1` | ` Transcoding` |  |   |   |
-| `SIVOIES_2` | ` Transcoding` |  |   |   |
-| `SIVOIES_3` | ` Transcoding` |  |   |   |
-| `NTHCENTRE` | ` NULL` |  |   |   |
-| `NTCA` | ` Transcoding` |  |   |   |
-| `NTCA_V` | ` Transcoding (copied)` |  |   |   |
-| `NACCA` | ` Transcoding` |  |   |   |
-| `NACCA_V` | ` Transcoding (copied)` |  |   |   |
-| `NTCV` | ` Transcoding` |  |   |   |
-| `NTCV_V` | ` Transcoding` |  |   |   |
-| `NACCV` | ` Transcoding` |  |   |   |
-| `NACCV_V` | ` Transcoding` |  |   |   |
-| `CTAIRECORO` | ` ''` |  |   |   |
-| `GESTEV_C1` | ` Transcoding` |  |   |   |
-| `GESTEV_C2` | ` Transcoding` |  |   |   |
-| `GESTEV_C3` | ` Transcoding` |  |   |   |
-| `GESTEV_C4` | ` Transcoding` |  |   |   |
-| `CVAO` | ` Transcoding` |  |   |   |
-| `AORVALO` | ` Transcoding` |  |   |   |
-| `NUMSERA` | ` One to one of IGS_ChiValvaire_RVANSerie` |  |   |   |
-| `NUMLOTA` | ` NULL` |  |   |   |
-| `GVMO` | ` Transcoding` |  |   |   |
-| `FABRICANTM` | ` Transcoding` |  |   |   |
-| `MODELEM` | ` Transcoding` |  |   |   |
-| `TAILLEM` | ` Transcoding` |  |   |   |
-| `NUMSERM` | ` One to one of IGS_ChiValvaire_RVMNSerie` |  |   |   |
-| `NUMLOTM` | ` NULL` |  |   |   |
-| `GVTO` | ` Transcoding` |  |   |   |
-| `TRIVALO` | ` Transcoding based on IGS_ChiValvaire_RVTType` |  |   |   |
-| `FABRICANTT` | ` Transcoding based on` |  |   |   |
-| `MODELET` | ` Transcoding based on IGS_ChiValvaire_RVTType` |  |   |   |
-| `TAILLET` | ` Transcoding based on IGS_ChiValvaire_RVTType and   IGS_ChiValvaire_RVTTaille` |  |   |   |
-| `NUMSERT` | ` One-to-one of IGS_ChiValvaire_RVTNSerie` |  |   |   |
-| `NUMLOTT` | ` NULL` |  |   |   |
-| `GVPO` | ` Transcoding based on IGS_ChiValvaire_RVPType` |  |   |   |
-| `PULMVALO` | ` Transcoding based on IGS_ChiValvaire_RVPType` |  |   |   |
-| `FABRICANTP` | ` Transcoding based on IGS_ChiValvaire_RVPType` |  |   |   |
-| `MODELEP` | ` Transcoding based on IGS_ChiValvaire_RVPType` |  |   |   |
-| `TAILLEP` | ` Transcoding based on IGS_ChiValvaire_RVPType and IGS_ChiValvaire_RVPTaille` |  |   |   |
-| `NUMSERP` | ` One-to-one of IGS_ChiValvaire_RVPNSerie` |  |   |   |
-| `NUMLOTP` | ` NULL` |  |   |   |
-| `CTAIREVALV` | ` NULL` |  |   |   |
-| `DIAGO` | ` Transcoding` |  |   |   |
-| `GESTEO` | ` Transcoding` |  |   |   |
-| `LOCO_C1` | ` One-to-one transcoding of IGS_ChiAort_AS` |  |   |   |
-| `LOCO_C2` | ` One-to-one transcoding of IGS_ChiAort_AS` |  |   |   |
-| `LOCO_C3` | ` One-to-one transcoding of IGS_ChiAort_Crosse` |  |   |   |
-| `LOCO_C4` | ` Simple transcoding of IDG_RuptAO and IGS_ChiAort` |  |   |   |
-| `LOCO_C5` | ` One-to-one transcoding of IGS_ChiAort_DE` |  |   |   |
-| `LOCO_C6` | ` NULL` |  |   |   |
-| `STENT` | ` One-to-one transcoding of IGS_ChiAort_DE` |  |   |   |
-| `STENTO` | ` One-to-one transcoding of IGS_ChiAort_Crosse` |  |   |   |
-| `NB_TUBE` | ` NULL` |  |   |   |
-| `FABRICANTCA1` | ` NULL` |  |   |   |
-| `MODELECA1` | ` NULL` |  |   |   |
-| `TAILLECA1` | ` NULL` |  |   |   |
-| `NUMSERCA1` | ` NULL` |  |   |   |
-| `NUMLOTCA1` | ` NULL` |  |   |   |
-| `FABRICANTCA2` | ` NULL` |  |   |   |
-| `MODELECA2` | ` NULL` |  |   |   |
-| `TAILLECA2` | ` NULL` |  |   |   |
-| `NUMSERCA2` | ` NULL` |  |   |   |
-| `NUMLOTCA2` | ` NULL` |  |   |   |
-| `FABRICANTCA3` | ` NULL` |  |   |   |
-| `MODELECA3` | ` NULL` |  |   |   |
-| `TAILLECA3` | ` NULL` |  |   |   |
-| `NUMSERCA3` | ` NULL` |  |   |   |
-| `NUMLOTCA3` | ` NULL` |  |   |   |
-| `PROTVO` | ` Transcoding` |  |   |   |
-| `PROTAOTYPE` | ` Transcoding` |  |   |   |
-| `TAILLECA4` | ` Transcoding of IGS_ChiAort` |  |   |   |
-| `NUMSERCA4` | ` Transcoding of IGS_ChiAort` |  |   |   |
-| `NUMLOTCA4` | ` NULL` |  |   |   |
-| `COMM` | ` NULL` |  |   |   |
-| `CHIRDIV_C1` | ` One-to-one transcoding of igs_chi_fermeture_civa` |  |   |   |
-| `CHIRDIV_C2` | ` One-to-one transcoding of igs_chi_fermeture_civp` |  |   |   |
-| `CHIRDIV_C3` | ` One-to-one transcoding of igs_chiaut_cmo` |  |   |   |
-| `CHIRDIV_C4` | ` One-to-one transcoding of igs_chi_resanevrisme` |  |   |   |
-| `CHIRDIV_C5` | ` One-to-one transcoding of igs_chi_complication_rupt` |  |   |   |
-| `CHIRDIV_C6` | ` Simple transcoding based on INT_BasCgx and AGE_CALCUL` |  |   |   |
-| `CHIRDIV_C7` | ` One-to-one transcoding of igs_chiaut_emboliepulm` |  |   |   |
-| `CHIRDIV_C8` | ` One-to-one transcoding of igs_chi_complication_rythme` |  |   |   |
-| `CHIRDIV_C9` | ` One-to-one transcoding of igs_chiaut_tum` |  |   |   |
-| `CHIRDIV_C10` | ` One-to-one transcoding of idg_coeurcontusion` |  |   |   |
-| `CHIRDIV_C11` | ` One-to-one transcoding of idg_coeurplaie` |  |   |   |
-| `CHIRDIV_C12` | ` NULL` |  |   |   |
-| `CHIRDIV_C13` | ` One-to-one transcoding of igs_chiaut_gref` |  |   |   |
-| `CHIRDIV_C14` | ` NULL` |  |   |   |
-| `CHIRDIV_C15` | ` NULL` |  |   |   |
-| `CHIRDIV_C16` | ` NULL` |  |   |   |
-| `CHIRDIV_C17` | ` NULL` |  |   |   |
-| `CHIRDIV_C18` | ` One-to-one transcoding of IGS_CHIAUT_DEFIBRILL` |  |   |   |
-| `CHIRDIV_C19` | ` Transcoding` |  |   |   |
-| `AUTRCHIT` | ` NULL` |  |   |   |
-| `AUTRCHIRCVO_C1` | ` One-to-one transcoding of IGS_CHIAUT_ASSOC` |  |   |   |
-| `AUTRCHIRCVO_C2` | ` NULL` |  |   |   |
-| `AUTRCHIRNCTO_C1` | ` NULL` |  |   |   |
-| `AUTRCHIRNCTO_C2` | ` One-to-one transcoding of IGS_CHIAUT_ASSOC` |  |   |   |
-| `DRECMOIS_C1` | ` NULL` |  |   |   |
-| `DRECMOIS_C2` | ` NULL` |  |   |   |
-| `DRECMOIS_C3` | ` One-to-one transcoding of IGS_CHIAUT_LONGDUREE` |  |   |   |
-| `TRANS` | ` Transcoding` |  |   |   |
-| `GRAVGLOB` | ` NULL` |  |   |   |
-| `REINTERV` | ` Transcoding` |  |   |   |
-| `REINTCECO` | ` Transcoding of iso_REINT` |  |   |   |
-| `COMPLL_C1` | ` One-to-one transcoding of ISO_Saignt` |  |   |   |
-| `COMPLL_C2` | ` One-to-one transcoding of iso_reprisetamp` |  |   |   |
-| `COMPLL_C3` | ` One-to-one transcoding of ISO_DOBU` |  |   |   |
-| `COMPLL_C4` | ` Transcoding` |  |   |   |
-| `COMPLL_C5` | ` Transcoding` |  |   |   |
-| `COMPLL_C6` | ` Transcoding` |  |   |   |
-| `COMPLL_C7` | ` One-to-one ISO_ECGRythme` |  |   |   |
-| `COMPLL_C8` | ` One-to-one iso_insrenale` |  |   |   |
-| `COMPLL_C9` | ` One-to-one iso_ventilprolonge` |  |   |   |
-| `COMPLL_C10` | ` NULL` |  |   |   |
-| `COMPLL_C30` | ` NULL` |  |   |   |
-| `COMPLL_C11` | ` One-to-one ISO_Desunion` |  |   |   |
-| `COMPLL_C12` | ` One-to-one iso_sepsimedia` |  |   |   |
-| `COMPLL_C13` | ` NULL` |  |   |   |
-| `COMPLL_C14` | ` One-to-one ISO_ECHOSurfA and ISO_ECHOSurfM` |  |   |   |
-| `COMPLL_C15` | ` One-to-one ISO_CPProthese_DYS` |  |   |   |
-| `COMPLL_C16` | ` One-to-one iso_hemorragiedigest` |  |   |   |
-| `COMPLL_C17` | ` NULL` |  |   |   |
-| `COMPLL_C18` | ` One-to-one iso_cpneuro_avc = 1` |  |   |   |
-| `COMPLL_C19` | ` One-to-one iso_cpneuro_avc = 2` |  |   |   |
-| `COMPLL_C20` | ` One-to-one iso_cpneuro_coma` |  |   |   |
-| `COMPLL_C21` | ` One-to-one ISO_ECGRythme` |  |   |   |
-| `COMPLL_C22` | ` One-to-one ISO_ECGCond_BAV` |  |   |   |
-| `COMPLL_C23` | ` One-to-one iso_cond_pace` |  |   |   |
-| `COMPLL_C24` | ` NULL` |  |   |   |
-| `COMPLL_C25` | ` ISO_AccidentHemo` |  |   |   |
-| `COMPLL_C26` | ` ISO_AllHeparine` |  |   |   |
-| `COMPLL_C27` | ` NULL` |  |   |   |
-| `COMPLL_C28` | ` NULL` |  |   |   |
-| `COMPLL_C29` | ` NULL` |  |   |   |
-| `AUTRCOMT` | ` NULL` |  |   |   |
-| `DATESORT_D` | ` to_char(INT_DateSortie,'DD')` |  |   |   |
-| `DATESORT_M` | ` to_char(INT_DateSortie,'MM')` |  |   |   |
-| `DATESORT_Y` | ` to_char(INT_DateSortie,'YYYY')` |  |   |   |
-| `DATESORT` | ` to_char(INT_DateSortie,'DD/MM/YYYY')` |  |   |   |
-| `STAT` | ` decode(PAT_DCD,NULL,0,1)` |  |   |   |
-| `DEC30J` | ` One-to-one calculated` |  |   |   |
-| `DATEDEC_D` | ` to_char(pat_datedeces,'DD')` |  |   |   |
-| `DATEDEC_M` | ` to_char(pat_datedeces,'MM')` |  |   |   |
-| `DATEDEC_Y` | ` to_char(pat_datedeces,'YYYY')` |  |   |   |
-| `DATEDEC` | ` to_char(pat_datedeces,'DD/MM/YYYY')` |  |   |   |
-| `DELDEC` | ` Simple transcoding` |  |   |   |
-| `DELDEC_V` | ` Simple transcoding (copied)` |  |   |   |
-| `CAUSEDEATH` | ` Transcoding for death etiology` |  |   |   |
-| `CTAIREDECE` | ` NULL` |  |   |   |
-| `EILS_TITTRE1` | ` NULL` |  |   |   |
-| `EILS_TITTRE_L1` | ` NULL` |  |   |   |
-| `TITRE_EILS_AUTT_L1` | ` NULL` |  |   |   |
-| `RISQ_EILST_L1` | ` NULL` |  |   |   |
-| `AUTRRISQT_L1` | ` NULL` |  |   |   |
-| `DEFAILLANCE_EILST_L1` | ` NULL` |  |   |   |
-| `MOMENT_EILST_L1` | ` NULL` |  |   |   |
-| `EILS_DESCRT_L1` | ` NULL` |  |   |   |
-| `DATEDN_F1_D` | ` NULL` |  |   |   |
-| `DATEDN_F1_M` | ` NULL` |  |   |   |
-| `DATEDN_F1_Y` | ` NULL` |  |   |   |
-| `DATEDN_F1` | ` NULL` |  |   |   |
-| `TYPECONSULTACTE_F1` | ` NULL` |  |   |   |
-| `STATUT_F1` | ` NULL` |  |   |   |
-| `RCP_F1` | ` NULL` |  |   |   |
-| `TRT_FAIT_F1` | ` NULL` |  |   |   |
-| `PROTOC_YN_F1` | ` NULL` |  |   |   |
-| `COMMENT_DN_F1` | ` NULL` |  |   |   |
-| `DECAPRESSORT` | ` Simple transcoding` |  |   |   |
-| `OCOMPL` | ` Transcoding` |  |   |   |
-| `CLEARDIAL_CLASSE` | ` Transcoding` |  |   |   |
-| `ETIOA` | ` Transcoding` |  |   |   |
-| `INSMIT` | ` Transcoding` |  |   |   |
-| `ETIOM` | ` Transcoding` |  |   |   |
-| `INSTRI` | ` Transcoding` |  |   |   |
-| `ETIOT` | ` Complex transcoding` |  |   |   |
-| `INSPULM` | ` Complex transcoding` |  |   |   |
-| `ETIOP` | ` Transcoding` |  |   |   |
-| `TYPECHIR_C4` | ` Transcoding` |  |   |   |
-| `CEC` | ` One-to-one and transcoding int_coeurbattant` |  |   |   |
-| `FABRICANTA` | ` Transcoding based on IGS_ChiValvaire_RVAType` |  |   |   |
-| `MODELEA` | ` Transcoding based on IGS_ChiValvaire_RVAType` |  |   |   |
-| `TAILLEA` | ` Transcoding based on IGS_ChiValvaire_RVAType and Taille` |  |   |   |
-| `MITVALO` | ` Trasncoding based on RVMType` |  |   |   |
-| `FABRICANTCA4` | ` Transcoding based on IGS_ChiValvaire_RVAType` |  |   |   |
-| `MODLECA4` | ` Transcoding based on IGS_ChiValvaire_RVAType` |  |   |   |
-| `NTAC` | ` One-to-one NTCV_V+NACCV_V` |  |   |   |
-| `NTAC_V` | ` One-to-one NTCV_V+NACCV_V` |  |   |   |
+| EPICARD ID | LOCAL ID | Annotations | 
+|------------|----------|--------|
+| `INUM_PATIENT`    | `num_patient` | singleton |
+| `STUDY_ID`        | `'EPICARD'` | singleton |
+| `COUNTRY_ID`      | `'fr'` | singleton |
+| `EXTRACTION_DATE` | `System's date` |   |
+| `SITE_ID`         | `'350000741_01'` | singleton |
+| `SUBJECT_ID`      | `num_interv` | 1-to-1 |
+| `SUBJECT_REF`     | `CONCAT('350000741_01-',  LPAD(num_interv, 8, '0'))` | calc |
+| `REF_CENTRENB`    | `'350000741_01'` | singleton |
+| `REF_NUMBER`      | `'350000741_01'` | singleton |
+| `CENTRENB`        | `'350000741_01'` | singleton |
+| `CENTRE`          | `'RENNES - HOPITAL PONTCHAILLOU'` | singleton |
+| `NOM`             | `NOM_PATIENT` | 1-to-1 |
+| `NOMM`            | `NOM_JF_PATIENT` | 1-to-1  |
+| `PRENOM`          | `PRENOM_PATIENT` | 1-to-1  |
+| `SEXE`            | `sexe` |  | 1-to-1   |   |
+| `DATNAIS_D`       | `TO_CHAR(DATE_NAIS_PATIENT, 'DD')` | calc  |
+| `DATNAIS_M`       | `TO_CHAR(DATE_NAIS_PATIENT, 'MM')` | calc  |
+| `DATNAIS_Y`       | `TO_CHAR(DATE_NAIS_PATIENT, 'YYYY')` | calc  |
+| `DATNAIS`         | `TO_CHAR(DATE_NAIS_PATIENT, 'DD/MM/YYYY')` | 1-to-1, calc  |
+| `EMAIL`           | `NULL` | coded-as-null  |
+| `PORT`            | `TEL` | 1-to-1  |
+| `PAYSNAISS`       | `Transcoding based on social security number` |   |
+| `COMNAIS`         | `Transcoding based on social security number and lieunaissance` |   |
+| `COMNAISOM`       | `Transcoding based on social security number` |   |
+| `PAYSNAISLEQUEL`  | `PAT_LIEUNAISSANCE` | 1-to-1  |
+| `STATUSVD`        | `decode(PAT_DCD,NULL,0,1)` | 1-to-1  |
+| `DATEDECP_D`      | `TO_CHAR(PAT_DATEDECES, 'DD')` | calc  |
+| `DATEDECP_M`      | `TO_CHAR(PAT_DATEDECES, 'MM')` | calc  |
+| `DATEDECP_Y`      | `TO_CHAR(PAT_DATEDECES, 'YYYY')` | calc  |
+| `DATEDECP`        | `TO_CHAR(PAT_DATEDECES,'DD/MM/YYYY')` | calc  |
+| `NBINTERVENTION`  | `PAT_NBINT_CALCUL` | 1-to-1  |
+| `NBINTERVENTION_V`| `PAT_NBINT_CALCUL` | 1-to-1  |
+| `DATEINTERV_D`    | `to_char(INT_DATEINTERVENTION,'DD')` | calc  |
+| `DATEINTERV_M`    | `to_char(INT_DATEINTERVENTION,'MM')` | calc  |
+| `DATEINTERV_Y`    | `to_char(INT_DATEINTERVENTION,'YYYY')` |calc  |
+| `DATEINTERV`      | `to_char(INT_DATEINTERVENTION,'DD/MM/YYYY')` | calc  |
+| `STATUS_INT`      | `NULL` | coded-as-null  |
+| `STATUS_INT_V`    | `NULL` | coded-as-null  |
+| `EUROSCORE`       | `NULL` | coded-as-null  |
+| `EUROSCORE_V`     | `NULL` | coded-as-null  |
+| `DATADM_D`        | `to_char(INT_DATEENTREE,'DD')` | calc  |
+| `DATADM_M`        | `to_char(INT_DATEENTREE,'MM')` | calc  |
+| `DATADM_Y`        | `to_char(INT_DATEENTREE,'YYYY')` | calc  |
+| `DATADM`          | `to_char(INT_DATEENTREE,'DD/MM/YYYY')` |calc   |
+| `DATINTP_D`       | `to_char(INT_DATEINTERVENTION,'DD')` | calc  |
+| `DATINTP_M`       | `to_char(INT_DATEINTERVENTION,'MM')` | calc  |
+| `DATINTP_Y`       | `to_char(INT_DATEINTERVENTION,'YYYY')` | calc  |
+| `DATINTP`         | `to_char(INT_DATEINTERVENTION,'DD/MM/YYYY')` | calc  |
+| `AGE`             | `AGE_CALCUL` | 1-to-1  |
+| `AGE_V`           | `AGE_CALCUL` | 1-to-1  |
+| `EUROSCORE_AGE`   | `NULL` | coded-as-null  |
+| `EUROSCORE_AGE_V` | `NULL` | coded-as-null  |
+| `POIDS`           | `int_poids` | 1-to-1  |
+| `POIDS_V`         | `int_poids` | 1-to-1  |
+| `TAILLE`          | `int_taille` | 1-to-1  |
+| `TAILLE_V`        | `int_taille` | 1-to-1  |
+| `SURF_COPR`       | `ROUND(INT_SurfCorp_calcul,0.01)` | calc  |
+| `SURF_COPR_V`     | `ROUND(INT_SurfCorp_calcul,0.01)` | calc  |
+| `IMC`             | `ROUND(INT_Poids / ( (INT_Taille/100)*(INT_Taille/100)),0.01)` | calc |
+| `IMC_V`           | `ROUND(INT_Poids / ( (INT_Taille/100)*(INT_Taille/100)),0.01)` | calc |
+| `CREAPREOP`       | `ipo_creat` | 1-to-1 |
+| `CREAPREOP_V`     | `ipo_creat` | 1-to-1 |
+| `CLEARANCE`       | Based on patient's gender | transc |
+| `END CLEARANCE_V` | based on patient's gender (copied) | transc |
+| `DIAL`            | based renal insufficiency | transc |
+| `TDIABPREOP`      | based on diabetes risk | transc |
+| `EUROSCORE_DIABETE` | `NULL` | coded-as-null  |
+| `DIAB`            | `ipo_risq_diabete` | 1-to-1 |
+| `BPCO`            | `IPO_Patho_InsResp` | 1-to-1 |
+| `ENDOCARA`        | Based on etiology of endocarditis (diagnostics) | transc |
+| `ENDOSTER`        | Based on etiology of endocarditis (diagnostics) | transc |
+| `NEUROMUSC`       | `IPO_Patho_DeficitNeuro` | 1-to-1 |
+| `APCVIAP`         | `IPO_Patho_ArtheritVX` | 1-to-1 |
+| `AMI`             | `IPO_Patho_ArtheritMI` | 1-to-1 |
+| `AORTIAP`         | `IPO_PATHO_ARTHERITMI` | 1-to-1  |
+| `ARTEXTR`         |  | transc |
+| `ATCD`            |  | transc |
+| `NOM_OPCAR`       | Based on previous intervention and reintervention | transc |
+| `NOM_OPCAR_V`     | Based on previous intervention and reintervention (copied) | transc |
+| `NYHA`            | `ipo_nyha` | 1-to-1 |
+| `ANGOR`           | `ipo_angor_instable` | 1-to-1 |
+| `IDM_90`          | `IEC_INFARCTUS_90J` | 1-to-1 |
+| `TVFV`            | Based on iec_ecgrythme | transc |
+| `ANUOLI`          | `int_choc` | 1-to-1 |
+| `INOTR`           | `INT_INOTROP` | 1-to-1 |
+| `BCP_PREOP`       | `INT_UrgCPBIA` | 1-to-1 |
+| `ECMO_ECLS`       | `INT_ASSMECA` | 1-to-1 |
+| `INC_PREOP`       | `int_intub` | 1-to-1 |
+| `MC_PREOP`        | `INT_masscard` | 1-to-1 |
+| `ETATPREOP`       |  | transc |
+| `FE`              | `iec_echofe` | 1-to-1 |
+| `FE_V`            | `iec_echofe` | 1-to-1 |
+| `FE_CLASSE`       | Based on `iec_echofe` | transc |
+| `PAPS`            | `IEC_EchoPaSyst` | 1-to-1 |
+| `PAPS_V`          | `IEC_EchoPaSyst` | 1-to-1 |
+| `PAPS_CLASSE`     | Based on `IEC_EchoPaSyst` | transc |
+| `DEGURG`          | `int_urgence` | 1-to-1 |
+| `COMINT`          |  | transc |
+| `CHIRAO`          | `igs_chiaort` | 1-to-1 |
+| `MARFAN`          | Based on `IDG_Etio_Marfan` | transc |
+| `CIVPI`           | Based on `igs_chi_fermeture_civa` | transc |
+| `NOMB_VCPA`       | Multiple columns | transc |
+| `STEN`            | Based on `iec_corog_degre` |  transc |
+| `ANTANC`          | Based on `ian_dateptca1,2,3,4` |  transc |
+| `INSAOR`          | Multiple columns |  transc |
+| `ETIOAMTP_C1`     | Multiple columns |  transc |
+| `ETIOAMTP_C2`     | Multiple columns |  transc |
+| `ETIOAMTP_C3`     | Multiple columns |  transc |
+| `ETIOAMTP_C4`     | Multiple columns |  transc |
+| `RETAOR`          | `decode(idg_lesionvalv_ra,NULL,0,1)` |   |
+| `RETMIT`          | `decode(idg_lesionvalv_rm,NULL,0,1)` |   |
+| `RETTRI`          | `decode(idg_lesionvalv_rt,NULL,0,1)` |   |
+| `RETPULM`         | `decode(idg_lesionvalv_rp,NULL,0,1)` |   |
+| `HTA`             | `ipo_risq_hta` | 1-to-1 |
+| `HCHOL`           | `IPO_Risq_Dyslip` | 1-to-1  |
+| `TAVK`            | Based on `ipo_patho_anticoag` | transc |
+| `TAA`             | Based on `ipo_patho_antiag` | transc |
+| `DOURAA`          | Coded as missing (`2`) |   |
+| `NINCEC`          |        | transc  |
+| `ATCDF`           | `NULL` | coded-as-null |
+| `DOSSIER`         | `NULL` | coded-as-null |
+| `COMPAT`          | `NULL` | coded-as-null |
+| `CHIRAV`          | `NULL` | coded-as-null, EPICARD_v1 (obsolete) |
+| `CHIRAV_V`        | `NULL` | coded-as-null, EPICARD_v1 (obsolete) | 
+| `INTMCEC`         | `NULL` | coded-as-null, EPICARD_v1 (obsolete) |
+| `INTMCEC_V`       | `NULL` | coded-as-null, EPICARD_v1 (obsolete) |
+| `EUROSCORE1`      | `NULL` | coded-as-null, EPICARD_v1 (obsolete) |
+| `EUROSCORE1_V`    | `NULL` | coded-as-null, EPICARD_v1 (obsolete) |
+| `EUROSCOREL`      | `NULL` | coded-as-null, EPICARD_v1 (obsolete) |
+| `EUROSCOREL_V`    | `NULL` | coded-as-null, EPICARD_v1 (obsolete) |
+| `CPBIA_PEROP`     | `NULL` | coded-as-null, EPICARD_v1 (obsolete) |
+| `DATINT_D`        | `to_char(INT_DATEINTERVENTION,'DD')` |   |
+| `DATINT_M`        | `to_char(INT_DATEINTERVENTION,'MM')` |   |
+| `DATINT_Y`        | `to_char(INT_DATEINTERVENTION,'YYYY')` |   |
+| `DATINT`          | `to_char(INT_DATEINTERVENTION,'DD/MM/YYYY')` |   |
+| `CODCHIR1`        | 1st surgeon's first and last names | transc |
+| `NBRPPS1`         | 1st surgeon's RPPS | transc |
+| `CODCHIR2`        | 2nd surgeon's first and last name | transc |
+| `NBRPPS2`         | 2nd surgeon's RPPS | transc |
+| `TYPECHIR_C1`     | `DECODE(igs_chicor, NULL, NULL, 1)` | 1-to-1 |
+| `TYPECHIR_C2`     |     | transc |
+| `TYPECHIR_C3`     | `DECODE(IGS_CHIAORT, NULL, NULL, 1)` | 1-to-1 |
+| `DURCLAMP`        | `int_tpsclamp` | 1-to-1 |
+| `DURCLAMP_V`      | `int_tpsclamp` | 1-to-1 |
+| `DURCEC`          | `int_tpscec` | 1-to-1 |
+| `DURCEC_V`        | `int_tpscec` | 1-to-1 |
+| `PROTCER`         |  | transc |
+| `GVA`             |  | transc |
+| `PROTCERA_C1`     | Based on `INT_PERFCEREB` | transc |
+| `PROTCERA_C2`     | Based on `int_itgarretcirc` | transc  |
+| `PROTCERA_C3`     | Based on `INT_PERFCEREB` | transc  |
+| `VOIESAB_C1`      | Based on `INT_Voie` | transc  |
+| `VOIESAB_C2`      | Based on `INT_Voie` | transc  |
+| `VOIESAB_C3`      | Based on `IGS_CHIENDO` | transc  |
+| `VOIESAB_C4`      | Based on `INT_Voie` | transc  |
+| `VOIESAB_C5`      | Based on `INT_Voie` | transc  |
+| `VOIESAB_C6`      | Based on `INT_Voie` | transc |
+| `VOIESAB_C7`      | Based on `INT_Voie` | transc  |
+| `VOIESAB_C8`      | `NULL` | coded-as-null  |
+| `VOIESAB_C9`      | `NULL` |  coded-as-null |
+| `VOIESAB_C11` | `NULL` |coded-as-null   |
+| `VOIESAB_C10` | Based on `INT_Voie` | transc |
+| `SIVOIES_1` |  | transc |
+| `SIVOIES_2` |  | transc |
+| `SIVOIES_3` |  | transc |
+| `NTHCENTRE` | `NULL` |coded-as-null   |
+| `NTCA` |  | transc |
+| `NTCA_V` | | transc |
+| `NACCA` |  | transc |
+| `NACCA_V` |  | transc |
+| `NTCV` | | transc |
+| `NTCV_V` | | transc |
+| `NACCV` |  | transc |
+| `NACCV_V` |  | transc |
+| `CTAIRECORO` | `''` |   |
+| `GESTEV_C1` | | transc |
+| `GESTEV_C2` | | transc  |
+| `GESTEV_C3` | | transc  |
+| `GESTEV_C4` | | transc  |
+| `CVAO` | | transc  |
+| `AORVALO` | | transc  |
+| `NUMSERA` | `IGS_ChiValvaire_RVANSerie` | 1-to-1 |
+| `NUMLOTA` | `NULL` | coded-as-null  |
+| `GVMO` |  | transc  |
+| `FABRICANTM` | | transc  |
+| `MODELEM` | | transc  |
+| `TAILLEM` | | transc  |
+| `NUMSERM` | `IGS_ChiValvaire_RVMNSerie` | 1-to-1  |
+| `NUMLOTM` | `NULL` | coded-as-null  |
+| `GVTO` |  | transc  |
+| `TRIVALO` | Based on `IGS_ChiValvaire_RVTType` | transc |
+| `FABRICANTT` | | transc |
+| `MODELET` | Based on `IGS_ChiValvaire_RVTType` | transc |
+| `TAILLET` | Based on `IGS_ChiValvaire_RVTType` `IGS_ChiValvaire_RVTTaille` | transc |
+| `NUMSERT` | `IGS_ChiValvaire_RVTNSerie` | 1-to-1 |
+| `NUMLOTT` | `NULL` | coded-as-null  |
+| `GVPO` | Based on `IGS_ChiValvaire_RVPType` | transc |
+| `PULMVALO` | Based on `IGS_ChiValvaire_RVPType` | transc |
+| `FABRICANTP` | Based on `IGS_ChiValvaire_RVPType` | transc |
+| `MODELEP` | Based on `IGS_ChiValvaire_RVPType` | transc |
+| `TAILLEP` | Based on `IGS_ChiValvaire_RVPType` `IGS_ChiValvaire_RVPTaille` | transc |
+| `NUMSERP` | `IGS_ChiValvaire_RVPNSerie` | 1-to-1 |
+| `NUMLOTP` | `NULL` | coded-as-null  |
+| `CTAIREVALV` | `NULL` | coded-as-null  |
+| `DIAGO` |  | transc |
+| `GESTEO` | | transc  |
+| `LOCO_C1` | `IGS_ChiAort_AS` | 1-to-1 |
+| `LOCO_C2` | `IGS_ChiAort_AS` | 1-to-1 |
+| `LOCO_C3` | `IGS_ChiAort_Crosse` | 1-to-1 |
+| `LOCO_C4` | `IDG_RuptAO`  `IGS_ChiAort` | transc |
+| `LOCO_C5` | `IGS_ChiAort_DE` | 1-to-1 |
+| `LOCO_C6` | `NULL` | coded-as-null  |
+| `STENT` | `IGS_ChiAort_DE` | 1-to-1 |
+| `STENTO` | `IGS_ChiAort_Crosse` | 1-to-1 |
+| `NB_TUBE` | `NULL` | coded-as-null  |
+| `FABRICANTCA1` | `NULL` | coded-as-null  |
+| `MODELECA1` | `NULL` | coded-as-null  |
+| `TAILLECA1` | `NULL` | coded-as-null  |
+| `NUMSERCA1` | `NULL` | coded-as-null  |
+| `NUMLOTCA1` | `NULL` | coded-as-null  |
+| `FABRICANTCA2` | `NULL` | coded-as-null  |
+| `MODELECA2` | `NULL` | coded-as-null  |
+| `TAILLECA2` | `NULL` | coded-as-null  |
+| `NUMSERCA2` | `NULL` | coded-as-null  |
+| `NUMLOTCA2` | `NULL` | coded-as-null  |
+| `FABRICANTCA3` | `NULL` | coded-as-null  |
+| `MODELECA3` | `NULL` | coded-as-null  |
+| `TAILLECA3` | `NULL` | coded-as-null  |
+| `NUMSERCA3` | `NULL` | coded-as-null  |
+| `NUMLOTCA3` | `NULL` | coded-as-null  |
+| `PROTVO` |  | transc |
+| `PROTAOTYPE` |  | transc |
+| `TAILLECA4` | `IGS_ChiAort` | transc |
+| `NUMSERCA4` | `IGS_ChiAort` | transc |
+| `NUMLOTCA4` | `NULL` | coded-as-null  |
+| `COMM` | `NULL` |coded-as-null   |
+| `CHIRDIV_C1` | `igs_chi_fermeture_civa` | 1-to-1  |
+| `CHIRDIV_C2` | `igs_chi_fermeture_civp` | 1-to-1  |
+| `CHIRDIV_C3` | `igs_chiaut_cmo` | 1-to-1  |
+| `CHIRDIV_C4` | `igs_chi_resanevrisme` | 1-to-1  |
+| `CHIRDIV_C5` | `igs_chi_complication_rupt` | 1-to-1  |
+| `CHIRDIV_C6` | Based on `INT_BasCgx` `AGE_CALCUL` | transc |
+| `CHIRDIV_C7` | `igs_chiaut_emboliepulm` | 1-to-1  |
+| `CHIRDIV_C8` | `igs_chi_complication_rythme` | 1-to-1  |
+| `CHIRDIV_C9` | `igs_chiaut_tum` | 1-to-1  |
+| `CHIRDIV_C10` | `idg_coeurcontusion` | 1-to-1  |
+| `CHIRDIV_C11` | `idg_coeurplaie` | 1-to-1  |
+| `CHIRDIV_C12` | `NULL` | coded-as-null  |
+| `CHIRDIV_C13` | `igs_chiaut_gref` | 1-to-1  |
+| `CHIRDIV_C14` | `NULL` | coded-as-null  |
+| `CHIRDIV_C15` | `NULL` | coded-as-null  |
+| `CHIRDIV_C16` | `NULL` |  coded-as-null |
+| `CHIRDIV_C17` | `NULL` | coded-as-null  |
+| `CHIRDIV_C18` | `IGS_CHIAUT_DEFIBRILL` | 1-to-1  |
+| `CHIRDIV_C19` |  | transc |
+| `AUTRCHIT` | `NULL` |coded-as-null   |
+| `AUTRCHIRCVO_C1` | `IGS_CHIAUT_ASSOC` | 1-to-1  |
+| `AUTRCHIRCVO_C2` | `NULL` |coded-as-null   |
+| `AUTRCHIRNCTO_C1` | `NULL` |coded-as-null   |
+| `AUTRCHIRNCTO_C2` | `IGS_CHIAUT_ASSOC` | 1-to-1  |
+| `DRECMOIS_C1` | `NULL` |coded-as-null   |
+| `DRECMOIS_C2` | `NULL` |coded-as-null   |
+| `DRECMOIS_C3` | `IGS_CHIAUT_LONGDUREE` | 1-to-1  |
+| `TRANS` | | transc |
+| `GRAVGLOB` | `NULL` |coded-as-null   |
+| `REINTERV` |  | transc |
+| `REINTCECO` | `iso_REINT` | transc |
+| `COMPLL_C1` | `ISO_Saignt` | 1-to-1 |
+| `COMPLL_C2` | `iso_reprisetamp` | 1-to-1  |
+| `COMPLL_C3` | `ISO_DOBU` | 1-to-1  |
+| `COMPLL_C4` |  | transc |
+| `COMPLL_C5` |  | transc |
+| `COMPLL_C6` |  | transc |
+| `COMPLL_C7` | `ISO_ECGRythme` | 1-to-1  |
+| `COMPLL_C8` | `iso_insrenale` | 1-to-1  |
+| `COMPLL_C9` | `iso_ventilprolonge` | 1-to-1  |
+| `COMPLL_C10` | `NULL` |coded-as-null   |
+| `COMPLL_C30` | `NULL` |coded-as-null   |
+| `COMPLL_C11` | `ISO_Desunion` | 1-to-1  |
+| `COMPLL_C12` | `iso_sepsimedia` | 1-to-1  |
+| `COMPLL_C13` | `NULL` |coded-as-null   |
+| `COMPLL_C14` | Based on `ISO_ECHOSurfA` `ISO_ECHOSurfM` | calc  |
+| `COMPLL_C15` | `ISO_CPProthese_DYS` | 1-to-1  |
+| `COMPLL_C16` | `iso_hemorragiedigest` | 1-to-1  |
+| `COMPLL_C17` | `NULL` |coded-as-null   |
+| `COMPLL_C18` | `iso_cpneuro_avc = 1` | 1-to-1  |
+| `COMPLL_C19` | `iso_cpneuro_avc = 2` | 1-to-1  |
+| `COMPLL_C20` | `iso_cpneuro_coma` | 1-to-1  |
+| `COMPLL_C21` | `ISO_ECGRythme` | 1-to-1  |
+| `COMPLL_C22` | `ISO_ECGCond_BAV` | 1-to-1  |
+| `COMPLL_C23` | `iso_cond_pace` | 1-to-1  |
+| `COMPLL_C24` | `NULL` |coded-as-null   |
+| `COMPLL_C25` | `ISO_AccidentHemo` | 1-to-1 |
+| `COMPLL_C26` | `ISO_AllHeparine` | 1-to-1 |
+| `COMPLL_C27` | `NULL` |coded-as-null   |
+| `COMPLL_C28` | `NULL` | coded-as-null  |
+| `COMPLL_C29` | `NULL` |coded-as-null   |
+| `AUTRCOMT`    | `NULL` |coded-as-null   |
+| `DATESORT_D` | `to_char(INT_DateSortie,'DD')` | calc |
+| `DATESORT_M` | `to_char(INT_DateSortie,'MM')` | calc |
+| `DATESORT_Y` | `to_char(INT_DateSortie,'YYYY')` | calc |
+| `DATESORT` | `to_char(INT_DateSortie,'DD/MM/YYYY')` | calc |
+| `STAT` | `decode(PAT_DCD,NULL,0,1)` | calc |
+| `DEC30J` |  | calc |
+| `DATEDEC_D` | `to_char(pat_datedeces,'DD')` | calc |
+| `DATEDEC_M` | `to_char(pat_datedeces,'MM')` | calc |
+| `DATEDEC_Y` | `to_char(pat_datedeces,'YYYY')` | calc |
+| `DATEDEC` | `to_char(pat_datedeces,'DD/MM/YYYY')` | calc |
+| `DELDEC` | | transc |
+| `DELDEC_V` | | transc |
+| `CAUSEDEATH` | | transc |
+| `CTAIREDECE` | `NULL` |coded-as-null   |
+| `EILS_TITTRE1` | `NULL` |coded-as-null   |
+| `EILS_TITTRE_L1` | `NULL` |coded-as-null   |
+| `TITRE_EILS_AUTT_L1` | `NULL` | coded-as-null  |
+| `RISQ_EILST_L1` | `NULL` | coded-as-null  |
+| `AUTRRISQT_L1` | `NULL` | coded-as-null  |
+| `DEFAILLANCE_EILST_L1` | `NULL` | coded-as-null  |
+| `MOMENT_EILST_L1` | `NULL` | coded-as-null  |
+| `EILS_DESCRT_L1` | `NULL` | coded-as-null  |
+| `DATEDN_F1_D` | `NULL` | coded-as-null  |
+| `DATEDN_F1_M` | `NULL` | coded-as-null  |
+| `DATEDN_F1_Y` | `NULL` | coded-as-null  |
+| `DATEDN_F1` | `NULL` | coded-as-null  |
+| `TYPECONSULTACTE_F1` | `NULL` | coded-as-null  |
+| `STATUT_F1` | `NULL` | coded-as-null  |
+| `RCP_F1` | `NULL` | coded-as-null  |
+| `TRT_FAIT_F1` | `NULL` | coded-as-null  |
+| `PROTOC_YN_F1` | `NULL` | coded-as-null  |
+| `COMMENT_DN_F1` | `NULL` |coded-as-null   |
+| `DECAPRESSORT` |  | transc |
+| `OCOMPL` | | transc |
+| `CLEARDIAL_CLASSE` | | transc |
+| `ETIOA` |  | transc |
+| `INSMIT` |  | transc |
+| `ETIOM` |  | transc |
+| `INSTRI` |  | transc |
+| `ETIOT` |  | transc |
+| `INSPULM` |  | transc |
+| `ETIOP` |  | transc |
+| `TYPECHIR_C4` | | transc |
+| `CEC` | `int_coeurbattant` | 1-to-1 |
+| `FABRICANTA` | Based on `IGS_ChiValvaire_RVAType` | transc |
+| `MODELEA` | Based on `IGS_ChiValvaire_RVAType` | transc  |
+| `TAILLEA` | Based on `IGS_ChiValvaire_RVAType and Taille` | transc |
+| `MITVALO` | Based on `Trasncoding based on RVMType` | transc |
+| `FABRICANTCA4` | Based on `IGS_ChiValvaire_RVAType` | transc |
+| `MODLECA4` | Based on `IGS_ChiValvaire_RVAType` | transc |
+| `NTAC` | `NTCV_V+NACCV_V` | calc |
+| `NTAC_V` | `NTCV_V+NACCV_V` | calc |
 
 ## Exclusion criteria <a name="exclusion-criteria"></a>
 1. No endoprostheses (IGS_CHIENDO)
