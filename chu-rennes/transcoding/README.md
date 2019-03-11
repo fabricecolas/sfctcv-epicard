@@ -5,7 +5,9 @@
 
 
 ## Computed attributes<a name="computed-attributes"></a>
+
 | `EPICARD ID` | `LOCAL ID` | 1-to-1 | Transc. | 
+------------------------------------------------
 | `INUM_PATIENT` | ` num_patient` |  |   |
 | `STUDY_ID` | ` 'EPICARD'` |  |   |
 | `COUNTRY_ID` | ` 'fr'` |  |   |
