@@ -7,7 +7,7 @@
 
 
 | EPICARD ID | LOCAL ID | Annotations | 
-|------------|----------|--------|
+|:-----------|:---------|--------|
 | `INUM_PATIENT`    | `num_patient` | singleton |
 | `STUDY_ID`        | `'EPICARD'` | singleton |
 | `COUNTRY_ID`      | `'fr'` | singleton |
@@ -29,9 +29,9 @@
 | `DATNAIS`         | `TO_CHAR(DATE_NAIS_PATIENT, 'DD/MM/YYYY')` | 1-to-1, calc  |
 | `EMAIL`           | `NULL` | coded-as-null  |
 | `PORT`            | `TEL` | 1-to-1  |
-| `PAYSNAISS`       | `Transcoding based on social security number` |   |
-| `COMNAIS`         | `Transcoding based on social security number and lieunaissance` |   |
-| `COMNAISOM`       | `Transcoding based on social security number` |   |
+| `PAYSNAISS`       | Based on social security number | transc  |
+| `COMNAIS`         | Based on social security number and lieunaissance | transc  |
+| `COMNAISOM`       | Based on social security number | transc   |
 | `PAYSNAISLEQUEL`  | `PAT_LIEUNAISSANCE` | 1-to-1  |
 | `STATUSVD`        | `decode(PAT_DCD,NULL,0,1)` | 1-to-1  |
 | `DATEDECP_D`      | `TO_CHAR(PAT_DATEDECES, 'DD')` | calc  |
@@ -109,14 +109,14 @@
 | `CHIRAO`          | `igs_chiaort` | 1-to-1 |
 | `MARFAN`          | Based on `IDG_Etio_Marfan` | transc |
 | `CIVPI`           | Based on `igs_chi_fermeture_civa` | transc |
-| `NOMB_VCPA`       | Multiple columns | transc |
+| `NOMB_VCPA`       | | transc |
 | `STEN`            | Based on `iec_corog_degre` |  transc |
 | `ANTANC`          | Based on `ian_dateptca1,2,3,4` |  transc |
-| `INSAOR`          | Multiple columns |  transc |
-| `ETIOAMTP_C1`     | Multiple columns |  transc |
-| `ETIOAMTP_C2`     | Multiple columns |  transc |
-| `ETIOAMTP_C3`     | Multiple columns |  transc |
-| `ETIOAMTP_C4`     | Multiple columns |  transc |
+| `INSAOR`          | |  transc |
+| `ETIOAMTP_C1`     | |  transc |
+| `ETIOAMTP_C2`     | |  transc |
+| `ETIOAMTP_C3`     | |  transc |
+| `ETIOAMTP_C4`     | |  transc |
 | `RETAOR`          | `decode(idg_lesionvalv_ra,NULL,0,1)` |   |
 | `RETMIT`          | `decode(idg_lesionvalv_rm,NULL,0,1)` |   |
 | `RETTRI`          | `decode(idg_lesionvalv_rt,NULL,0,1)` |   |
