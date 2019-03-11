@@ -5,9 +5,9 @@ academic hospital.
 
 ## At Rennes' academic hospital
 
-1. [In-house developed transcoding](chu-rennes/transcoding/index.md); 
-2. [Files encoded and submitted as ISO-8859-1 (ANSI)](chu-rennes/encoding/index.md);
-3. [Current status (issues, todo)](chu-rennes/roadmap/index.md).
+1. [In-house developed transcoding](chu-rennes/transcoding/README.md); 
+2. [Files encoded and submitted as ISO-8859-1 (ANSI)](chu-rennes/encoding/README.md);
+3. [Current status (issues, todo)](chu-rennes/roadmap/README.md).
 
 ## At Tentelemed: Features requests, issues or bugs
 
