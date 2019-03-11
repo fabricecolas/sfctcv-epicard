@@ -6,9 +6,9 @@
 ## Computed attributes
 
 
+
 | EPICARD ID | LOCAL ID | Annotations | 
 |:-----------|:---------|--------|
-| `INUM_PATIENT`    | `num_patient` | singleton |
 | `STUDY_ID`        | `'EPICARD'` | singleton |
 | `COUNTRY_ID`      | `'fr'` | singleton |
 | `EXTRACTION_DATE` | `System's date` |   |
