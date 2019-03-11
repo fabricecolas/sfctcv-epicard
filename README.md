@@ -4,8 +4,8 @@ A few notes on EPICARD's registry from Rennes' academic hospital.
 
 ## Bugs, issues, and user stories
 
-### User Stories
-1. 2019-03-06: [Empty center patients](user-stories/empty-center-patients/index.md) 
+### Feature request (User stories)
+1. 2019-03-06: [Empty a center of all of its patients](user-stories/empty-center-patients/index.md) 
 
 ### Issues
 1. 2019-02-25: [Export / byte order mark (BOM)](issues/bom-in-files)
