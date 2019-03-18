@@ -394,5 +394,5 @@ ELSE IF (Chi.Valv.>0)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres
 
 ## 4. Issues / to do<a name="ISSUES"></a> 
 
-1. [EuroScore too high: Due to transcoding of COMINT](todo/2019-03-18_COMINT_EUROSCORE) <a name="ISSUES_TRANSCODING_COMINT"></a>.
+1. [EuroScore too high: Due to transcoding of COMINT](todo/2019-03-18_COMINT_EUROSCORE.md) <a name="ISSUES_TRANSCODING_COMINT"></a>.
 
