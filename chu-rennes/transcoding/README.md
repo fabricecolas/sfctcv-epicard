@@ -1,10 +1,21 @@
 # Transcoding
 
-1. [List of computed attributes](#computed-attributes)
-2. [List of exclusion criteria](#exclusion-criteria)
-3. [Transcoding details](#transcoding-details)
+This page tabs information about the export to EPICARD from Rennes' academic
+hospital. It details notably: 
+1. [the list of computed attributes](#computed-attributes);
+2. [the list of exclusion criteria](#exclusion-criteria);
+3. [some transcoding details](#transcoding-details).
 
 ## 1. List of computed attributes
+
+The following table lists the transcoded attributes for EPICARD, the local ids
+at Rennes' academic hospital, and some annotations. The annotations indicate
+notably whether the computed attribute is:
+- `{singleton, coded-as-null, coded-as-??}`, e.g., a string that's constant for all patients;
+- `1-to-1`, i.e., a one-to-one relationship between a local ID and EPICARD's export;
+- `calc`, i.e., an attribute that's calculated from some other local attributes;
+- `transc` when a more involved transcoding algorithm combines multiple local attributes; and 
+- `drift`, when an attribute's coding will drift in time and therefore needs particular attention.  
 
 | EPICARD ID | LOCAL ID | Annotations | 
 |:-----------|:---------|--------|
@@ -359,10 +370,12 @@
 | `NTAC_V` | `NTCV_V+NACCV_V` | calc |
 
 ## 2. List of exclusion criteria <a name="exclusion-criteria"></a>
-1. No endoprostheses (IGS_CHIENDO)
-2. No re-operated patient (redux)
-3. No followed-up patients (returns only the first intervention row_number == 1)
-4. No incoherent weight (>250)
+
+Patients matching one or more of the following criteria are not sent to EPICARD: 
+1. No endoprostheses (IGS_CHIENDO);
+2. No re-operated patient (redux);
+3. No followed-up patients (returns only the first intervention row_number == 1);
+4. No incoherent weight (>250). 
 
 ## 3. Transcoding details <a name="transcoding-details"></a> 
 
