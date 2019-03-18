@@ -105,11 +105,7 @@
 | `PAPS_V`          | `IEC_EchoPaSyst` | 1-to-1 |
 | `PAPS_CLASSE`     | Based on `IEC_EchoPaSyst` | transc |
 | `DEGURG`          | `int_urgence` | 1-to-1 |
-| `COMINT`          | ``` /* Indic.Congén. := Intervention due to a birth defect (congenital disorder) */
-     IF N(Chi.Valv.)+N(Chi.Compl.Infar.)+N(Chi.Ao.)+N(Chi.Endo.)+N(Chi.Autres)+N(Indic.Congén.)=0 AND N(Chi.Cor.)>0 THEN 1/Pontage isolé
-ELSE IF N(Chi.Valv.)+N(Chi.Compl.Infar.)+N(Chi.Ao.)+N(Chi.Endo.)+N(Chi.Autres)+N(Indic.Congén.)=1 AND N(Chi.Cor.)=0 THEN 2/Un seul geste autre que pontage
-ELSE IF N(Chi.Valv.)+N(Chi.Compl.Infar.)+N(Chi.Ao.)+N(Chi.Endo.)+N(Chi.Autres)+N(Indic.Congén.)    +  N(Chi.Cor.)=2 THEN 3/Double geste (double valve ou pont+valve)
-ELSE IF N(Chi.Valv.)+N(Chi.Compl.Infar.)+N(Chi.Ao.)+N(Chi.Endo.)+N(Chi.Autres)+N(Indic.Congén.)    +  N(Chi.Cor.)>2 THEN 4/Triple geste ou plus```  | transc |
+| `COMINT`          | See [COMINT](#TRANSCODING_COMINT)  | transc |
 | `CHIRAO`          | `igs_chiaort` | 1-to-1 |
 | `MARFAN`          | Based on `IDG_Etio_Marfan` | transc |
 | `CIVPI`           | Based on `igs_chi_fermeture_civa` | transc |
@@ -368,3 +364,17 @@ ELSE IF N(Chi.Valv.)+N(Chi.Compl.Infar.)+N(Chi.Ao.)+N(Chi.Endo.)+N(Chi.Autres)+N
 2. No re-operated patient (redux)
 3. No followed-up patients (returns only the first intervention row_number == 1)
 4. No incoherent weight (>250)
+
+## Detailed transcoding
+
+### *COMINT*: <a name="TRANSCODING_COMINT"></a> 
+
+```
+     IF N(Chi.Valv.)+N(Chi.Compl.Infar.)+N(Chi.Ao.)+N(Chi.Endo.)+N(Chi.Autres)+N(Indic.Congén.)=0 AND N(Chi.Cor.)>0 THEN 1 (Pontage isolé)
+ELSE IF N(Chi.Valv.)+N(Chi.Compl.Infar.)+N(Chi.Ao.)+N(Chi.Endo.)+N(Chi.Autres)+N(Indic.Congén.)=1 AND N(Chi.Cor.)=0 THEN 2 (Un seul geste autre que pontage)
+ELSE IF N(Chi.Valv.)+N(Chi.Compl.Infar.)+N(Chi.Ao.)+N(Chi.Endo.)+N(Chi.Autres)+N(Indic.Congén.)    +  N(Chi.Cor.)=2 THEN 3 (Double geste (double valve ou pont+valve))
+ELSE IF N(Chi.Valv.)+N(Chi.Compl.Infar.)+N(Chi.Ao.)+N(Chi.Endo.)+N(Chi.Autres)+N(Indic.Congén.)    +  N(Chi.Cor.)>2 THEN 4 (Triple geste ou plus)
+```
+
+Notations:
+- `Indic.Congén.` := Intervention due to a birth defect (congenital disorder)
