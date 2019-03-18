@@ -1,11 +1,10 @@
 # Transcoding
 
-- [Computed attributes](#computed-attributes)
-- [Exclusion criteria](#exclusion-criteria)
+1. [List of computed attributes](#computed-attributes)
+2. [List of exclusion criteria](#exclusion-criteria)
+3. [Transcoding details](#transcoding-details)
 
-## Computed attributes
-
-
+## 1. List of computed attributes
 
 | EPICARD ID | LOCAL ID | Annotations | 
 |:-----------|:---------|--------|
@@ -359,15 +358,15 @@
 | `NTAC` | `NTCV_V+NACCV_V` | calc |
 | `NTAC_V` | `NTCV_V+NACCV_V` | calc |
 
-## Exclusion criteria <a name="exclusion-criteria"></a>
+## 2. List of exclusion criteria <a name="exclusion-criteria"></a>
 1. No endoprostheses (IGS_CHIENDO)
 2. No re-operated patient (redux)
 3. No followed-up patients (returns only the first intervention row_number == 1)
 4. No incoherent weight (>250)
 
-## Detailed transcoding
+## 3. Transcoding details <a name="transcoding-details"></a> 
 
-### *COMINT*: <a name="TRANSCODING_COMINT"></a> 
+### Attribute *COMINT* (EPICARD) <a name="TRANSCODING_COMINT"></a> 
 
 ```
      IF N(Chi.Valv.)+N(Chi.Compl.Infar.)+N(Chi.Ao.)+N(Chi.Endo.)+N(Chi.Autres)+N(Indic.Congén.)=0 AND N(Chi.Cor.)>0 THEN 1 (Pontage isolé)
