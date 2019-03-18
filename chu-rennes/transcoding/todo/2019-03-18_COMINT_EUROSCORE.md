@@ -4,12 +4,12 @@
 
 It seems the EuroScore is too high for many patients from Rennes.
 
-## Causes
+## Possible causes
 1. Locally, forms are improperly entered;
 2. Transcoding of `COMINT` is inadequate; or  
 3. Transcoding of `CHIRDIV` or `TYPECHIR` is inadequate.
 
-## To do
+## How to address the problem
 
 Review the **EuroScore guidelines** to code the complexity of a surgical
 intervention, and check that:
@@ -20,7 +20,7 @@ there're two;
 3. One surgical intervention on a valve = 1; and 
 4. More valve interventions count for 2+; 
 
-One proposed changed (to be reviewed) is to move from ~~`(Chi.Valv.>0)` to `N(Chi.Valv.)`:
+One proposed changed (to be reviewed) is to move from the indicator `(Chi.Valv.>0)` to the count `N(Chi.Valv.)`:
 ``` /* Current */
      IF (Chi.Valv.>0)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>0)+(Indic.Congén.>0)=0 AND (Chi.Cor.>0)>0 THEN 1 (Pontage isolé)
 ELSE IF (Chi.Valv.>0)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>0)+(Indic.Congén.>0)=1 AND (Chi.Cor.>0)=0 THEN 2 (Un seul geste autre que pontage)
