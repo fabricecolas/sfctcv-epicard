@@ -382,10 +382,10 @@ Patients matching one or more of the following criteria are not sent to EPICARD:
 ### Attribute *COMINT* (EPICARD) <a name="TRANSCODING_COMINT"></a> 
 
 ```
-     IF (Chi.Valv.>0)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>0)+(Indic.Congén.>0)=0 AND (Chi.Cor.>0)>0 THE 1 (Pontage isolé)
-ELSE IF (Chi.Valv.>0)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>0)+(Indic.Congén.>0)=1 AND (Chi.Cor.>0)=0 THE 2 (Un seul geste autre que pontage)
-ELSE IF (Chi.Valv.>0)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>0)+(Indic.Congén.>0)    +  (Chi.Cor.>0)=2 THE 3 (Double geste (double valve ou pont+valve))
-ELSE IF (Chi.Valv.>0)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>0)+(Indic.Congén.>0)    +  (Chi.Cor.>0)>2 THE 4 (Triple geste ou plus)
+     IF (Chi.Valv.>0)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>0)+(Indic.Congén.>0)=0 AND (Chi.Cor.>0)>0 THEN 1 (Pontage isolé)
+ELSE IF (Chi.Valv.>0)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>0)+(Indic.Congén.>0)=1 AND (Chi.Cor.>0)=0 THEN 2 (Un seul geste autre que pontage)
+ELSE IF (Chi.Valv.>0)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>0)+(Indic.Congén.>0)    +  (Chi.Cor.>0)=2 THEN 3 (Double geste (double valve ou pont+valve))
+ELSE IF (Chi.Valv.>0)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>0)+(Indic.Congén.>0)    +  (Chi.Cor.>0)>2 THEN 4 (Triple geste ou plus)
 ```
 
 Notations:
