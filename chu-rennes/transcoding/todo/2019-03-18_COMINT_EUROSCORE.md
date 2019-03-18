@@ -11,14 +11,14 @@ It seems the EuroScore is too high for many patients from Rennes.
 
 ## How to address the problem
 
-Review the **EuroScore guidelines** to code the complexity of a surgical
+Review the **EuroScore guidelines** [1] to code the complexity of a surgical
 intervention, and check that:
 1. 1+ coronary artery bypass graft is coded as 1 whenever 1+ bypasses are done;
 2. `CHIRDIV` and `TYPECHIR` are properly coding all the interventions types,
 thereby not letting one understand that there's only one intervention when
 there're two;  
 3. One surgical intervention on a valve = 1; and 
-4. More valve interventions count for 2+; 
+4. More valve interventions count for 2+. 
 
 One proposed changed (to be reviewed) is to move from the indicator `(Chi.Valv.>0)` to the count `N(Chi.Valv.)`:
 ``` /* Current */
@@ -33,3 +33,5 @@ ELSE IF N(Chi.Valv.)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>
 ELSE IF N(Chi.Valv.)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>0)+(Indic.Congén.>0)    +  (Chi.Cor.>0)=2 THEN 3 (Double geste (double valve ou pont+valve))
 ELSE IF N(Chi.Valv.)+(Chi.Compl.Infar.>0)+(Chi.Ao.>0)+(Chi.Endo.>0)+(Chi.Autres>0)+(Indic.Congén.>0)    +  (Chi.Cor.>0)>2 THEN 4 (Triple geste ou plus)
 ```
+
+[1] EuroSCORE II. Nashefa et al.; European Journal of Cardio-Thoracic Surgery 41 (2012) 1–12 [doi:10.1093/ejcts/ezs043](https://doi.org/10.1093/ejcts/ezs043)
