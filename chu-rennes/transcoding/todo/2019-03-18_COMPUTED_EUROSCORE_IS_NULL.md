@@ -1,4 +1,4 @@
-# EuroScore too high: Due to transcoding of COMINT?
+# Missing values in EuroScore 
 
 ## Problem
 
