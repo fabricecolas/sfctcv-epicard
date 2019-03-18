@@ -2,9 +2,9 @@
 
 This page tabs information about the export to EPICARD from Rennes' academic
 hospital. It details notably: 
-1. [the list of computed attributes](#computed-attributes);
-2. [the list of exclusion criteria](#exclusion-criteria);
-3. [some transcoding details](#transcoding-details).
+1. [the list of **computed attributes**](#computed-attributes);
+2. [the list of **exclusion criteria**](#exclusion-criteria);
+3. [some **transcoding details**](#transcoding-details).
 
 ## 1. List of computed attributes
 
