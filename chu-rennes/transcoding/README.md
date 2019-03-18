@@ -105,7 +105,7 @@
 | `PAPS_V`          | `IEC_EchoPaSyst` | 1-to-1 |
 | `PAPS_CLASSE`     | Based on `IEC_EchoPaSyst` | transc |
 | `DEGURG`          | `int_urgence` | 1-to-1 |
-| `COMINT`          | See [COMINT](#TRANSCODING_COMINT)  | transc |
+| `COMINT`          | Transc. details [below](#TRANSCODING_COMINT)  | transc |
 | `CHIRAO`          | `igs_chiaort` | 1-to-1 |
 | `MARFAN`          | Based on `IDG_Etio_Marfan` | transc |
 | `CIVPI`           | Based on `igs_chi_fermeture_civa` | transc |
